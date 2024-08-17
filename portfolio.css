@@ -29,7 +29,7 @@
 }
 
 body {
-    background-image: url("Desktop\ -\ 6.png ");
+    background-image: url("images/Desktop\ -\ 6.png ");
     background-size: cover;
     overflow-x: hidden;
     background-color: black;
@@ -413,7 +413,7 @@ box-sizing: border-box !important;
 
 .skills-section {
     position: relative;
-    background-image: url("Desktop\ -\ 7.png");
+    background-image: url("images/Desktop\ -\ 7.png");
     background-size: cover;
     z-index: -2;
 }
