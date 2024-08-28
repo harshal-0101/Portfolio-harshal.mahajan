@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="portfolio.css">
+    <script type="module" src="portfolio.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <div class="color-div"></div>
+            <div class="logo-name">PORTFOLIO</div>
+
+            <div class="responsio-menu">
+                <i id="Menu-btn" class="fa-solid fa-list-ul"></i>
+            </div>
+
+        </div>
+        <div class="menu">
+            <div id="moreOpion" class="option">
+                <ul>
+                    <li><a href="Portfolio.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                    <li><a href="Project.html"><i class="fa-solid fa-circle-info"></i> ABOUT</a></li>
+                    <li><a href="Project.html"><i class="fa-solid fa-code"></i> My Work</a></li>
+                    <li><a href="Service.html"><i class="fa-solid fa-screwdriver-wrench"></i> SERVICE</a></li>
+                    <li><a href="ContactUS.php"><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
+                </ul>
+
+            </div>
+            <!-- <div class="option-color"></div> -->
+        </div>
+    </div>
+
+    <div class="color1"></div>
+    <div class="my-Projects">
+        <div class="My-work">
+            <h1>My Work</h1>
+        </div>
+        <div class="options">
+            <button>Web</button>
+            <button>App</button>
+            <button>UI/UX</button>
+        </div>
+
+        <div class="web-section">
+            <div class="project-1">
+                <div class="projectImg">
+                    <img src="https://cdn5.vectorstock.com/i/1000x1000/90/74/online-shopping-system-isometric-vector-29009074.jpg" alt="">
+                </div>
+                <div class="project-Details">
+                    <h2>Cloth E-commerce Shopping System</h2>
+                    <p>Status: On Going </p>
+                </div>
+            </div>
+            <div class="color3"></div>
+            <div class="project-1">
+                <div class="projectImg">
+                    <img src="https://cdn5.vectorstock.com/i/1000x1000/90/74/online-shopping-system-isometric-vector-29009074.jpg" alt="">
+                </div>
+                <div class="project-Details">
+                    <h2>Cloth E-commerce Shopping System</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="color2"></div>
+            <div class="project-1">
+                <div class="projectImg">
+                    <img src="https://cdn5.vectorstock.com/i/1000x1000/90/74/online-shopping-system-isometric-vector-29009074.jpg" alt="">
+                </div>
+                <div class="project-Details">
+                    <h2>Cloth E-commerce Shopping System</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<style>
+    body {
+        margin: 10px 10px 10px 10px;
+        padding: 0;
+        background-color: black;
+    }
+    
+    .color1 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50px;
+        background-color: rgb(122, 90, 218);
+        filter: blur(150px);
+        z-index: -1;
+    }
+    
+    .color3 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50px;
+        background-color: rgb(142, 220, 254);
+        top: 150%;
+        left: 0;
+        bottom: 0;
+        filter: blur(150px);
+        z-index: -1;
+    }
+    
+    .color2 {
+        position: absolute;
+        max-width: 300px;
+        width: 100%;
+        height: 300px;
+        border-radius: 50px;
+        background-color: rgba(58, 16, 186, 0.889);
+        top: 50%;
+        right: 0;
+        filter: blur(150px);
+        z-index: -1;
+    }
+    
+    .my-Projects {
+        max-width: 1500px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .My-work {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    .options {
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.121);
+        border-radius: 25px;
+    }
+    
+    .options button {
+        font-size: 20px;
+        max-width: 200px;
+        width: 100%;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #6b5adc;
+        color: white;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    .web-section {
+        max-width: 1500px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .project-1 {
+        margin-top: 40px;
+        display: flex;
+        max-width: 1500px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.197);
+        border-radius: 25px;
+    }
+    
+    .projectImg img {
+        max-width: 600px;
+        width: 100%;
+        border-radius: 25px;
+        margin: auto;
+    }
+    
+    .project-Details {
+        margin-left: 10px;
+    }
+    
+    .project-Details h2 {
+        color: white;
+        border: 1px solid #6b5adc;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    
+    @media only screen and (max-width:1121px) {
+        .project-1 {
+            display: block;
+        }
+        .projectImg {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>

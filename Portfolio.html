@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4238ddec9c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="portfolio.css?v1">
-    <script type="module" src="portfolio.js"></script>
+    <script type="module" src="portfolio.js?v2"></script>
     <title>Harshal M N</title>
 </head>
 
@@ -27,24 +27,27 @@
             <div class="logo">
                 <div class="color-div"></div>
                 <div class="logo-name">PORTFOLIO</div>
+
+                <div class="responsio-menu">
+                    <i id="Menu-btn" class="fa-solid fa-list-ul"></i>
+                </div>
+
             </div>
             <div class="menu">
-                <div class="option">
+                <div id="moreOpion" class="option">
                     <ul>
-                        <li><a href=""><i class="fa-solid fa-house"></i> HOME</a></li>
-                        <li><a href=""><i class="fa-solid fa-circle-info"></i> ABOUT</a></li>
-                        <li><a href=""><i class="fa-solid fa-code"></i> PROJECT</a></li>
-                        <li><a href=""><i class="fa-solid fa-screwdriver-wrench"></i> SERVIC</a></li>
-                        <li><a href=""><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
+                        <li><a href="Portfolio.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                        <li><a href="Portfolio.html"><i class="fa-solid fa-circle-info"></i> ABOUT</a></li>
+                        <li><a href="Project.html"><i class="fa-solid fa-code"></i> My Work</a></li>
+                        <li><a href="Service.html"><i class="fa-solid fa-screwdriver-wrench"></i> SERVICE</a></li>
+                        <li><a href="ContactUS.php"><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
                     </ul>
 
                 </div>
 
-                <div class="responsio-menu">
-                    <i class="fa-solid fa-list-ul"></i>
-                </div>
 
-                <div class="option-color"></div>
+
+                <!-- <div class="option-color"></div> -->
             </div>
         </div>
         <!-- -----------info-section--------------- -->
@@ -169,7 +172,7 @@
                     <img src="images/profile.jpg" alt="">
                 </div>
                 <div class="info-about">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident esse eos eveniet tenetur est? Magnam dignissimos voluptas debitis est explicabo inventore doloremque placeat, architecto vitae itaque neque sapiente. Nam, itaque.
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident esse eos eveniet tenetur est? Magnam dignissimos voluptas debitis est explicabo inventore doloremque placeat, architecto vitae itaque neque sapiente. Nam, itaque.</p>
                 </div>
             </div>
         </div>
@@ -270,7 +273,7 @@
                 </div>
 
             </div>
-            <img src="images/Desktop - 9.png" alt="">
+            <!-- <img src="images/Background_image_3.png" alt=""> -->
         </div>
         <!-- -----------certificats-section--------------- -->
         <div class="certificats-section">
@@ -286,13 +289,23 @@
                 <div class="certificate-1">
                     <p id="skillC">JavaScript <span><i class="fa-solid fa-medal"></i></span></p>
                     <p>Provider: HakerRank</p>
-                    <img src="certificatis/python.png" alt="JavaScript certificate" width="300px">
+                    <img src="certificatis/javascript.png" alt="JavaScript certificate" width="300px">
                 </div>
             </div>
+            <button id="left-move"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="right-move"><i class="fa-solid fa-angle-right"></i></button>
         </div>
         <!-- -------------Projects--section---------- -->
         <div class="project-section">
-
+            <marquee behavior="" direction="">
+                <h1>Freelancer on</h1>
+                <div class="Freelancer-img">
+                    <img src="https://imgs.search.brave.com/fkcTurWLGCGTRhT1pK-CMqTHaKO3eP3eoCmcvtvGHrQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kdDJz/ZGYwZGI4em9iLmNs/b3VkZnJvbnQubmV0/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzAyL2ZpdmVyci5w/bmc" alt="">
+                    <img src="images/freelancer.jpg" alt="">
+                    <img src="images/upwork.jpg" alt="">
+                </div>
+            </marquee>
+            <p>you can contant also on this Plotforms</p>
         </div>
         <!-- --------------footer-section---------------------->
         <hr>

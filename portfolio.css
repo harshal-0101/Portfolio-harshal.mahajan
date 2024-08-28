@@ -1,3 +1,18 @@
+:root {
+    --box-color: linear-gradient(to right, rgba(127, 53, 192, 0.167), rgba(45, 192, 245, 0.185));
+}
+
+body {
+    transition: 1s;
+    background-image: url("images/Background_image_1.png ");
+    background-size: cover;
+    overflow-x: hidden;
+    background-color: black;
+    padding: 0;
+    margin: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .loading {
     top: 400px;
     left: 50%;
@@ -26,16 +41,6 @@
     100% {
         transform: rotate(360deg);
     }
-}
-
-body {
-    background-image: url("images/Desktop\ -\ 6.png ");
-    background-size: cover;
-    overflow-x: hidden;
-    background-color: black;
-    padding: 0;
-    margin: 0;
-    font-family: cursive;
 }
 
 .container {
@@ -97,7 +102,7 @@ body {
     width: 100px;
     height: 20px;
     list-style: none;
-    background-image: linear-gradient(to right, rgba(127, 53, 192, 0.167), rgba(45, 192, 245, 0.185));
+    background-image: var( --box-color);
     padding: 15px;
     border-radius: 20PX;
     border-top: 2px solid rgba(144, 66, 212, 0.742);
@@ -205,9 +210,11 @@ body {
 .about-head h1 {
     max-width: 200px;
     width: 100%;
-    background-image: linear-gradient(to right, rgba(127, 53, 192, 0.613), rgba(45, 192, 245, 0.567));
+    background-image: var( --box-color);
+    border-top: 2px solid rgba(144, 66, 212, 0.742);
+    border-bottom: 2px solid rgba(144, 66, 212, 0.742);
     border-radius: 20px;
-    border: 2px solid rgba(144, 66, 212, 0.742);
+    /* border: 2px solid rgba(144, 66, 212, 0.742); */
 }
 
 .about-section {
@@ -239,15 +246,17 @@ body {
 }
 
 .info-about {
-    padding: 10px;
     max-width: 550px;
     width: 100%;
-    height: 100px;
     color: white;
     align-self: center;
     border: 2px solid rgba(137, 43, 226, 0.414);
     background-image: linear-gradient(to right, rgba(127, 53, 192, 0.454), rgba(45, 192, 245, 0.236));
     border-radius: 20px;
+}
+
+.info-about p {
+    padding: 5px;
 }
 
 .color-about {
@@ -307,30 +316,42 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+    /* .header {
+        display: block;
+        width: 100%;
+    } */
+    .logo {
+        width: 100%;
+    }
     .option {
-        margin-top: 50px;
+        margin-top: 10px;
         display: none;
-        padding: 20px;
         z-index: 2;
+        width: 100%;
+        /* background-color: var(--box-color); */
     }
     .option ul {
-        border: 2px solid rgba(255, 255, 255, 0.443);
-        width: 100%;
-        background-color: rgb(0, 0, 0);
         position: relative;
+        background-color: rgba(0, 0, 0, 0.701);
+        backdrop-filter: blur(20px);
+        height: 90vb;
+        border: 2px solid rgba(255, 255, 255, 0.443);
         display: block;
+        border-radius: 25px;
     }
     .info-container {
         display: block;
     }
     .option ul li {
+        margin-left: -20px;
         margin-top: 10px;
+        width: 95%;
     }
     .myimg {
         display: none;
     }
     .responsio-menu {
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
         display: block;
     }
     .about-section {
@@ -413,7 +434,7 @@ box-sizing: border-box !important;
 
 .skills-section {
     position: relative;
-    background-image: url("images/Desktop\ -\ 7.png");
+    /* background-image: url("images/Desktop\ -\ 7.png"); */
     background-size: cover;
     z-index: -2;
 }
@@ -424,12 +445,13 @@ box-sizing: border-box !important;
     z-index: 1
 }
 
-.skills-section img {
+
+/* .skills-section img {
     top: 250px;
     width: 100%;
     position: absolute;
     z-index: -1px;
-}
+} */
 
 .skills-1,
 .skills-2,
@@ -618,12 +640,13 @@ box-sizing: border-box !important;
 .carti-head h1 {
     max-width: 200px;
     width: 100%;
-    background-image: linear-gradient(to right, rgba(127, 53, 192, 0.613), rgba(45, 192, 245, 0.567));
-    border-radius: 20px;
-    border: 2px solid rgba(144, 66, 212, 0.742);
+    background-image: var( --box-color);
+    border-top: 2px solid rgba(144, 66, 212, 0.742);
+    border-bottom: 2px solid rgba(144, 66, 212, 0.742);
+    border-radius: 25px;
 }
 
-.certificate-section {
+.certificats-section {
     position: relative;
     max-width: 1000px;
     width: 100%;
@@ -633,11 +656,17 @@ box-sizing: border-box !important;
 .certificats {
     margin: auto;
     color: white;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    overflow: scroll;
+    border-top: 2px solid rgba(144, 66, 212, 0.374);
+    border-bottom: 2px solid rgba(144, 66, 212, 0.374);
+    border-radius: 25px;
+}
+
+.certificats::-webkit-scrollbar {
+    display: none;
 }
 
 .certificate-1 {
@@ -649,12 +678,28 @@ box-sizing: border-box !important;
     padding: 10px;
     border-radius: 20px;
     background-color: #6c47d21b;
+    margin: 10px;
 }
 
 .certificate-1 #skillC {
     margin-bottom: -10px;
     display: flex;
     justify-content: space-between;
+}
+
+#left-move,
+#right-move {
+    border-top: 2px solid rgba(144, 66, 212, 0.374);
+    border-bottom: 2px solid rgba(144, 66, 212, 0.374);
+    background-color: transparent;
+    color: rgba(173, 106, 231, 0.742);
+    border-left: 0;
+    border-right: 0;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 50px;
+    width: 100%;
 }
 
 #skillc span i {
@@ -669,10 +714,11 @@ box-sizing: border-box !important;
     .skills-4 {
         display: grid;
         justify-content: center;
+        max-width: 600px;
+        width: 100%;
     }
     .skill-div {
-        max-width: 500px;
-        width: 100px;
+        width: 400px;
     }
     .skills-section img {
         top: 600px;
@@ -680,8 +726,7 @@ box-sizing: border-box !important;
         position: absolute;
     }
     .certificats {
-        display: grid;
-        justify-content: center;
+        display: flex;
     }
 }
 
@@ -747,4 +792,17 @@ box-sizing: border-box !important;
 .button:hover::before {
     width: 0px;
     height: 0px;
+}
+
+.project-section {
+    color: white;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.Freelancer-img img {
+    height: 50px;
+    width: 300px;
+    margin-right: 30px;
 }

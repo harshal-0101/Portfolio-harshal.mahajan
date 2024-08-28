@@ -36,3 +36,12 @@ function erase() {
 // window.onload = function() {
 //     document.getElementById('loader').style.display = 'black';
 // };
+var MenuBtn = document.getElementById("Menu-btn");
+
+MenuBtn.onclick = function() {
+    if (document.getElementById("moreOpion").style.display == 'none') {
+        document.getElementById("moreOpion").style.display = 'Block';
+    } else {
+        document.getElementById("moreOpion").style.display = 'none';
+    }
+}

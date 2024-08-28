@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="portfolio.css">
+    <script type="module" src="portfolio.js"></script>
+    <style>
+        /* Additional styles specific to the services page */
+        
+        .services-section {
+            background: transparent;
+        }
+        
+        .services-section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .service-section {
+            max-width: 1500px;
+            width: 100%;
+            display: flex;
+            z-index: 3;
+        }
+        
+        .service {
+            background-image: url(image/business-8469826_1920.png);
+            background-size: cover;
+            overflow: hidden;
+            transition: 1s;
+            border: 0;
+            align-self: center;
+            background: rgba(255, 255, 255, 0.197);
+            padding: 1.5rem;
+            margin: 1rem auto;
+            max-width: 1000px;
+            height: 100%;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service:hover {
+            transition: 1s;
+            border: 1px solid rgb(122, 90, 218);
+            box-shadow: 2px 2px 10px 2px rgba(138, 124, 228, 0.698);
+        }
+        
+        .service h3 {
+            margin-top: 0;
+            border: 1px solid rgb(122, 90, 218);
+            max-width: 200px;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .vectors-images img {
+            width: 400px;
+        }
+        
+        .vectors-images-phone {
+            display: none;
+        }
+        
+        strong {
+            color: #ffffff;
+        }
+        
+        li {
+            color: rgb(194, 194, 194);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="color-div"></div>
+                <div class="logo-name">PORTFOLIO</div>
+
+                <div class="responsio-menu">
+                    <i id="Menu-btn" class="fa-solid fa-list-ul"></i>
+                </div>
+
+            </div>
+            <div class="menu">
+                <div id="moreOpion" class="option">
+                    <ul>
+                        <li><a href="Portfolio.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                        <li><a href="Project.html"><i class="fa-solid fa-circle-info"></i> ABOUT</a></li>
+                        <li><a href="Project.html"><i class="fa-solid fa-code"></i> My Work</a></li>
+                        <li><a href="Service.html"><i class="fa-solid fa-screwdriver-wrench"></i> SERVICE</a></li>
+                        <li><a href="ContactUS.php"><i class="fa-solid fa-envelope"></i> CONTACT</a></li>
+                    </ul>
+
+                </div>
+                <!-- <div class="option-color"></div> -->
+            </div>
+        </div>
+    </header>
+
+    <section class="services-section">
+        <div class="color1"></div>
+        <div class="container">
+            <h2>Our Services</h2>
+
+            <div class="service-section">
+
+                <div class="vectors-images-phone">
+                    <img src="images/web-development1-1.png" alt="">
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-globe" id="web"></i>
+                    <h3>Website Development</h3>
+                    <p>
+                        In today’s digital world, your website is often the first impression potential customers have of your business. I provide end-to-end website development services, focusing on creating visually stunning, user-friendly, and responsive websites.
+                    </p>
+                    <ul>
+                        <li><strong>Responsive Design:</strong> Ensuring your website looks great on all devices, from desktops to smartphones.</li>
+                        <li><strong>HTML & CSS:</strong> Clean, well-structured code for a seamless user experience.</li>
+                        <li><strong>UI/UX Design:</strong> Intuitive interfaces and engaging user experiences that captivate visitors.</li>
+                        <li><strong>SEO Optimization:</strong> Basic SEO practices to improve your site’s search engine visibility.</li>
+                        <li><strong>Performance Optimization:</strong> Fast loading times and smooth interactions.</li>
+                    </ul>
+                </div>
+                <div class="vectors-images">
+                    <img src="images/web-development1-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="service-section">
+                <div class="vectors-images-phone">
+                    <img src="images/App_development-1.png" alt="">
+                </div>
+
+                <div class="vectors-images">
+                    <img src="images/App_development-1.png" alt="">
+                </div>
+                <div class="service">
+                    <i class="fa-brands fa-android"></i>
+                    <h3>App Development</h3>
+                    <p>
+                        Beyond websites, I build high-quality mobile applications that deliver exceptional user experiences. Whether you need an app for Android or iOS, I use the latest technologies to bring your ideas to life.
+                    </p>
+                    <ul>
+                        <li><strong>Custom App Design:</strong> Engaging and user-friendly interfaces tailored to your audience.</li>
+                        <li><strong>HTML & CSS Integration:</strong> Seamlessly integrated front-end design for web-based apps.</li>
+                        <li><strong>UI/UX Excellence:</strong> Crafting intuitive user experiences to enhance satisfaction.</li>
+                        <li><strong>Cross-Platform Development:</strong> Ensuring compatibility with both Android and iOS platforms.</li>
+                        <li><strong>Performance Optimization:</strong> Smooth, efficient app performance.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="color2"></div>
+    <section class="why-me">
+        <div class="why-choose">
+            <img src="images/questions-1.png" alt="">
+            <h1><i class="fa-solid fa-question"></i> Why Choose Me?</h1>
+            <li><strong>Tailored Solutions:</strong>Each website is designed to meet your specific needs and goals.</li>
+            <li><strong>High Quality:</strong>Attention to detail in both design and functionality.</li>
+            <li><strong>Timely Delivery:</strong> Efficient project management to meet your deadlines.</li>
+            <li><strong>Ongoing Support:</strong>I offer post-launch support to ensure everything runs smoothly.</li>
+        </div>
+
+        <div class="why-choose">
+            <img src="images/different1-1.png" alt="">
+            <h1><i class="fa-solid fa-users"></i> What's different </h1>
+            <li><strong>Innovative Solutions:</strong>Cutting-edge technology to keep your app ahead of the competition.</li>
+            <li><strong>User-Centric Design:</strong>Focused on creating apps that provide real value to users.</li>
+            <li><strong>Quality Assurance:</strong>Rigorous testing to ensure your app is bug-free and reliable.</li>
+            <li><strong>Post-Launch Support:</strong>Ongoing maintenance and updates to keep your app in top shape.</li>
+        </div>
+    </section>
+
+    <div class="getstart">
+
+        <h1><i class="fa-solid fa-quote-left"></i> Get Started</h1>
+        <p>Ready to elevate your online presence or bring your app idea to life? Contact me today to discuss your project and get a personalized quote. I look forward to working with you to achieve your digital goals!</p>
+        <a href="ContactUS.html">
+            <button class="button">
+            Get in touch <i class="fa-regular fa-hand-pointer"></i>
+            <div class="hoverEffect">
+              <div></div>
+            </div>
+          </button>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<style>
+    /* Basic styles */
+    
+    body {
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        background-color: black;
+        margin: 10px;
+        padding: 0;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .color1 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50px;
+        background-color: rgb(122, 90, 218);
+        filter: blur(150px);
+        z-index: -1;
+    }
+    
+    .color2 {
+        position: absolute;
+        max-width: 300px;
+        width: 100%;
+        height: 300px;
+        border-radius: 50px;
+        background-color: rgba(58, 16, 186, 0.889);
+        right: 0;
+        filter: blur(150px);
+        z-index: -1;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* Header styles */
+    
+    header {
+        color: #fff;
+    }
+    /* Section styles */
+    
+    section {
+        padding: 2rem 0;
+    }
+    
+    h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .why-me {
+        max-width: 1000px;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        display: flex;
+    }
+    
+    .why-choose {
+        max-width: 400px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.09);
+        margin-right: 5px;
+        padding: 15px;
+        border-radius: 25px;
+    }
+    
+    .why-choose img {
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .why-choose:hover {
+        transition: 1s;
+        border: 1px solid rgb(122, 90, 218);
+        box-shadow: 2px 2px 10px 2px rgba(138, 124, 228, 0.698);
+    }
+    
+    .why-choose h1 {
+        border: 1px solid rgb(122, 90, 218);
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        border-radius: 20px;
+        margin: auto;
+    }
+    
+    .getstart {
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.197);
+        padding: 10px;
+        border-radius: 25px;
+    }
+    
+    .getstart h1 {
+        margin-top: -10px;
+        margin-bottom: -20px;
+    }
+    
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        border: 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10rem;
+        transition: all 0.02s;
+        font-weight: bold;
+        cursor: pointer;
+        color: rgb(37, 37, 37);
+        z-index: 0;
+        box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .button:hover {
+        background: rgb(193, 228, 248);
+        color: rgb(33, 0, 85);
+    }
+    
+    .button:active {
+        transform: scale(0.97);
+    }
+    
+    .hoverEffect {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+    .hoverEffect div {
+        background: rgb(222, 0, 75);
+        background: linear-gradient( 90deg, rgba(222, 0, 75, 1) 0%, rgba(191, 70, 255, 1) 49%, rgba(0, 212, 255, 1) 100%);
+        border-radius: 40rem;
+        width: 10rem;
+        height: 10rem;
+        transition: 0.4s;
+        filter: blur(20px);
+        animation: effect infinite 3s linear;
+        opacity: 0.5;
+    }
+    
+    .button:hover .hoverEffect div {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .service i {
+        margin-top: -100px;
+        position: absolute;
+        right: 100px;
+        z-index: -2;
+        font-size: 300px;
+        text-align: end;
+        color: rgba(49, 28, 155, 0.424);
+    }
+    
+    #web {
+        margin-top: -100px;
+        position: absolute;
+        left: 100px;
+        right: 100%;
+        z-index: -2;
+        font-size: 300px;
+        text-align: end;
+        color: rgba(49, 28, 155, 0.424);
+    }
+    
+    @keyframes effect {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @media only screen and (max-width: 1121px) {
+        .service-section {
+            display: block;
+        }
+        .service {
+            width: 100%;
+        }
+        .vectors-images {
+            display: none;
+        }
+        .vectors-images-phone {
+            display: flex;
+            justify-content: center;
+        }
+        .vectors-images-phone img {
+            max-width: 300px;
+            width: 100%;
+        }
+        .why-me {
+            display: block;
+            max-width: 300px;
+            width: 100%;
+            margin: auto;
+        }
+        .why-choose {
+            margin-top: 5px;
+        }
+    }
+</style>
