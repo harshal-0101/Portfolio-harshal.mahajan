@@ -296,7 +296,6 @@ body {
 .responsio-menu {
     text-align: right;
     width: 100%;
-    position: relative;
     color: rgb(13, 13, 13);
     font-size: 40px;
     align-content: center;
@@ -304,7 +303,9 @@ body {
 }
 
 .responsio-menu i {
-    position: relative;
+    margin-top: -20px;
+    position: absolute;
+    right: 0;
     text-shadow: 0 0 5px #3099d2, 0 0 5px #6c47d2;
 }
 
@@ -331,7 +332,10 @@ body {
         /* background-color: var(--box-color); */
     }
     .option ul {
-        position: relative;
+        margin-right: 50px;
+        max-width: 200px;
+        width: 100%;
+        position: absolute;
         background-color: rgba(0, 0, 0, 0.701);
         backdrop-filter: blur(20px);
         height: 90vb;
